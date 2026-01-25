@@ -29,6 +29,7 @@ export function Navigation() {
     { id: "skills", label: "Compétences" },
     { id: "experience", label: "Expériences" },
     { id: "projects", label: "Projets" },
+    { id: "projects", label: "Projets" },
     { id: "contact", label: "Contact" },
   ]
 
