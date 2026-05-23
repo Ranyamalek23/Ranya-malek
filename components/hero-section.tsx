@@ -47,18 +47,18 @@ export function HeroSection() {
           </div>
           {/* </CHANGE> */}
 
-<div className="flex-1 space-y-6 text-center lg:text-left pt-8">
-  <div className="space-y-4">
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground text-balance leading-tight">
-      Ingénieure technico-fonctionnelle
-    </h1>
 
-    <p className="max-w-xl mx-auto lg:mx-0 text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-      Entre besoins métier, solutions SI et innovation.
-    </p>
+<div className="flex-1 space-y-8 text-center lg:text-left pt-8">
+  <div className="space-y-4"> 
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight"> Ingénieure technico-fonctionnelle </h1>
+  <p className="text-lg md:text-xl text-muted-foreground text-pretty"> Entre besoins métier, solutions SI et innovation </p>
+  
   </div>
-</div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
+
+
+
+          
+    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
               <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-all hover:scale-105 group" onClick={() => {
                 const element = document.getElementById("experience")
                 if (element) {
