@@ -14,7 +14,7 @@ export function AboutSection() {
           <div className="relative space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
               <span className="font-semibold text-foreground">
-                Ranya Malek, 25 ans
+                Ranya Malek , 
               </span>
               , diplômée d’un{" "}
               <span className="font-semibold text-foreground">
