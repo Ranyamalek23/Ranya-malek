@@ -41,6 +41,7 @@ const experiences = [
           "Réalisation d'études d'impact",
           "Suivi opérationnel : planification, reporting, chiffrages",
           "Participation aux soutenances de sélection des solutions SI",
+         " Coordination avec les équipes sécurité et IAM pour la mise en place et la gestion des rôles et habilitations utilisateurs en conformité avec les exigences de sécurité SI."
         ],
       },
     ],
