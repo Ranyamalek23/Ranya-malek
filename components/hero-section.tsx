@@ -49,13 +49,11 @@ export function HeroSection() {
 
           <div className="flex-1 space-y-8 text-center lg:text-left pt-8">
             <div className="space-y-4">
-              <div className="inline-block px-4 py-2 bg-gradient-to-r from-primary/10 to-chart-2/10 rounded-full text-sm font-medium text-primary mb-8 border border-primary/20">
-                Ingénieure Logicielle
-              </div>
+             
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
-                Du besoin métier à la solution logicielle
+                Ingénieure Logicielle
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground text-pretty"> </p>
+              <p className="text-lg md:text-xl text-muted-foreground text-pretty"> Business . Tach . Innovation </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
