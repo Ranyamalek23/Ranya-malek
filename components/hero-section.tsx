@@ -55,7 +55,7 @@ export function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight">
                 Du besoin métier à la solution logicielle
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground text-pretty">Avec rigueur et sens du détail</p>
+              <p className="text-lg md:text-xl text-muted-foreground text-pretty"> </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center pt-4">
