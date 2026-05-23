@@ -50,8 +50,10 @@ export function HeroSection() {
 
 <div className="flex-1 space-y-8 text-center lg:text-left pt-8">
   <div className="space-y-4"> 
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground text-balance leading-tight"> Ingénieure technico-fonctionnelle </h1>
-  <p className="text-lg md:text-xl text-muted-foreground text-pretty"> Entre besoins métier, solutions SI et innovation </p>
+<h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground text-balance leading-tight">
+  Ingénieure technico-fonctionnelle
+</h1>  
+    <p className="text-lg md:text-xl text-muted-foreground text-pretty"> Entre besoins métier, solutions SI et innovation </p>
   
   </div>
 
