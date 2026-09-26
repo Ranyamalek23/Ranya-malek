@@ -1,12 +1,116 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
-import { Popover, PopoverTrigger, PopoverContent } from "@/components/ui/popover"
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip"
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion"
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover"
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip"
 import { Info } from "lucide-react"
 import Image from "next/image"
 
 const experiences = [
+  // =========================================================
+  // GROUPE LA POSTE
+  // =========================================================
+  {
+    company: "Groupe La Poste",
+    logo: "/la-poste-logo.jpg",
+    role: "Chargée de projet SIRH – Data, Reporting & Pilotage de la performance",
+    department: "Direction de la Mobilité et du Recrutement Groupe (DMRG)",
+    period: "Juil. 2026 – Aujourd’hui · CDD",
+    location: "Paris, Île-de-France",
+
+    context:
+      "Intervention au sein de la Direction RH sur des projets SIRH liés au recrutement et à la mobilité, avec un rôle en analyse fonctionnelle, reporting RH, qualité des données et transformation digitale.",
+
+    missions: [
+      {
+        category: "Analyse fonctionnelle & SIRH",
+        tasks: [
+          "Recueil et analyse des besoins métiers RH et traduction en exigences fonctionnelles adaptées au SI",
+          "Conception et évolution des lots fonctionnels SIRH : recrutement, onboarding, viviers de talents et mobilité interne",
+          "Interface entre les métiers RH, les équipes techniques et les intégrateurs SAP, avec coordination des évolutions fonctionnelles",
+        ],
+      },
+      {
+        category: "Data, Reporting & Pilotage RH",
+        tasks: [
+          "Création et configuration de rapports et tables d’extraction SAP SuccessFactors (Table Reports) pour le pilotage RH",
+          "Conception de tableaux de bord et KPI RH sous SAP Analytics Cloud (Story) et Power BI",
+          "Fiabilisation des données RH, analyse des incohérences et anomalies et contribution à leur résolution",
+        ],
+      },
+      {
+        category: "Spécifications, tests & suivi projet",
+        tasks: [
+          "Rédaction des spécifications fonctionnelles et technico-fonctionnelles, règles de gestion et documentation",
+          "Définition et mise en œuvre des tests d’intégration, bout-en-bout et non-régression et qualification fonctionnelle",
+          "Suivi opérationnel des projets SIRH, amélioration continue et accompagnement des utilisateurs",
+          "Contribution à la veille technologique et à la transformation digitale de la Direction RH",
+        ],
+      },
+    ],
+
+    projects: [
+      {
+        title:
+          "Reporting & Pilotage RH – SAP SuccessFactors, SAP Analytics Cloud & Power BI",
+        description:
+          "Création de rapports Table Reports, conception de dashboards et KPI RH, analyse et fiabilisation des données pour le pilotage des activités de recrutement et de mobilité.",
+      },
+      {
+        title: "Espace IA DMRG – SharePoint",
+        description:
+          "Conception et création de l’espace IA, structuration et gestion des contenus, administration des habilitations et accompagnement des utilisateurs.",
+      },
+    ],
+
+    tools: [
+      {
+        category: "SIRH",
+        items: ["SAP SuccessFactors", "Table Reports"],
+      },
+      {
+        category: "Data & Reporting",
+        items: ["SAP Analytics Cloud (Story)", "Power BI"],
+      },
+      {
+        category: "Digital Workplace",
+        items: ["SharePoint", "Microsoft Teams"],
+      },
+      {
+        category: "CRM",
+        items: ["Salesforce"],
+      },
+      {
+        category: "Fonctionnel & gestion de projet",
+        items: [
+          "Analyse fonctionnelle",
+          "Spécifications fonctionnelles",
+          "Tests & recette",
+          "Qualité des données",
+          "Pilotage",
+        ],
+      },
+    ],
+
+    image: "/la-poste-sirh.jpg",
+  },
+
+  // =========================================================
+  // BOUYGUES TELECOM
+  // =========================================================
   {
     company: "Bouygues Telecom",
     logo: "/bouygues-telecom-logo.jpg",
@@ -14,8 +118,10 @@ const experiences = [
     department: "Pôle Pilotage & Conception – DSI",
     period: "Mars 2025 – Sept. 2025 (7 mois)",
     location: "Meudon, Île-de-France · Sur site",
+
     context:
       "Intervention au sein de la DSI de Bouygues Telecom, côté MOE, sur le système d’information de provisioning mobile, avec un rôle en analyse fonctionnelle, conception et support fonctionnel.",
+
     missions: [
       {
         category: "Analyse fonctionnelle & conception SI",
@@ -41,105 +147,195 @@ const experiences = [
           "Réalisation d'études d'impact",
           "Suivi opérationnel : planification, reporting, chiffrages",
           "Participation aux soutenances de sélection des solutions SI",
-         " Coordination avec les équipes sécurité et IAM pour la mise en place et la gestion des rôles et habilitations utilisateurs en conformité avec les exigences de sécurité SI."
+          "Coordination avec les équipes sécurité et IAM pour la mise en place et la gestion des rôles et habilitations utilisateurs en conformité avec les exigences de sécurité SI",
         ],
       },
     ],
+
     projects: [
       {
         title: "Refonte IHM Commande Cartes SIM Bytel",
-        description: "Amélioration des parcours utilisateurs, correction des dysfonctionnements fonctionnels et optimisation de l'ergonomie d'un outil métier.",
+        description:
+          "Amélioration des parcours utilisateurs, correction des dysfonctionnements fonctionnels et optimisation de l'ergonomie d'un outil métier.",
       },
       {
         title: "Disaster Recovery",
-        description: "Étude et conception d'un dispositif de reprise des données critiques du réseau mobile à partir des bases SI en cas de sinistre majeur.",
+        description:
+          "Étude et conception d'un dispositif de reprise des données critiques du réseau mobile à partir des bases SI en cas de sinistre majeur.",
       },
       {
         title: "Refonte du SI de provisioning mobile",
-        description: "Contribution à la définition de l'architecture fonctionnelle d'un nouveau système de provisioning.",
+        description:
+          "Contribution à la définition de l'architecture fonctionnelle d'un nouveau système de provisioning.",
       },
     ],
+
     tools: [
-      { category: "Contexte SI", items: ["SI Télécom · MOE"] },
-      { category: "Modélisation & conception", items: ["UML", "BPMN", "PlantUML", "Visio", "Figma"] },
-      { category: "Intégration & services", items: ["API REST", "Swagger"] },
-      { category: "Bases de données", items: ["Oracle"] },
-      { category: "Serveurs applicatifs", items: ["Java (Spring)"] },
-      { category: "Systèmes d’exploitation", items: ["Solaris", "Linux", "Windows"] },
-      { category: "Pilotage & collaboration", items: ["Jira", "Confluence", "Git"] },
-      { category: "Chiffrage & suivi", items: ["Tool"] },
-      { category: "Données & analyse", items: ["DBeaver"] },
-      { category: "Méthodes", items: ["Méthodes agiles", "Reporting", "Coordination avec les équipes techniques"] },
+      {
+        category: "Contexte SI",
+        items: ["SI Télécom · MOE"],
+      },
+      {
+        category: "Modélisation & conception",
+        items: ["UML", "BPMN", "PlantUML", "Visio", "Figma"],
+      },
+      {
+        category: "Intégration & services",
+        items: ["API REST", "Swagger"],
+      },
+      {
+        category: "Bases de données",
+        items: ["Oracle"],
+      },
+      {
+        category: "Serveurs applicatifs",
+        items: ["Java (Spring)"],
+      },
+      {
+        category: "Systèmes d’exploitation",
+        items: ["Solaris", "Linux", "Windows"],
+      },
+      {
+        category: "Pilotage & collaboration",
+        items: ["Jira", "Confluence", "Git"],
+      },
+      {
+        category: "Chiffrage & suivi",
+        items: ["Tool"],
+      },
+      {
+        category: "Données & analyse",
+        items: ["DBeaver"],
+      },
+      {
+        category: "Méthodes",
+        items: [
+          "Méthodes agiles",
+          "Reporting",
+          "Coordination avec les équipes techniques",
+        ],
+      },
     ],
+
     image: "/telecom-network-interface.jpg",
   },
+
+  // =========================================================
+  // FREDON ÎLE-DE-FRANCE
+  // =========================================================
   {
     company: "FREDON Île-de-France",
     logo: "/fredon-logo.jpg",
-    role: "Cheffe de Projet – Transformation Digitale",
+    role: "Cheffe de projet SIRH – Déploiement & Intégration ERP",
     period: "Avr. 2024 – Août 2024 (5 mois)",
     location: "Champlan, Île-de-France · Sur site",
+
     context:
-      "Intervention sur un projet de transformation digitale visant le déploiement et l'intégration d'un ERP au sein de l'organisation.",
+      "Intervention sur un projet de transformation digitale visant le déploiement et l’intégration de l’ERP VSActivity et de ses modules SIRH au sein de l’organisation.",
+
     missions: [
       {
-        category: "Déploiement & intégration ERP",
+        category: "Analyse fonctionnelle & cadrage",
         tasks: [
-          "Déploiement ERP VSActivity : commercial, RH, recrutement, finance",
-          "Intégration avec les outils informatiques existants",
-          "Supervision de la reprise des données",
+          "Recueil et analyse des besoins métiers",
+          "Rédaction du cahier des charges et des spécifications fonctionnelles",
         ],
       },
       {
-        category: "Pilotage fonctionnel & coordination",
+        category: "Déploiement & intégration SIRH",
         tasks: [
-          "Interface entre l'éditeur et les utilisateurs",
-          "Recueil des besoins métiers et ajustement fonctionnel",
-          "Analyse des risques et actions d'atténuation",
+          "Déploiement par lots des modules SIRH de l’ERP couvrant le recrutement, l’onboarding, les entretiens et la gestion administrative",
+          "Coordination entre l’éditeur ERP et les utilisateurs internes pour assurer la traduction des besoins et le suivi des évolutions",
+          "Supervision de la reprise et de la fiabilisation des données dans l’ERP",
         ],
       },
       {
-        category: "Données, reporting & suivi",
+        category: "Tests & accompagnement",
         tasks: [
-          "Analyse et préparation des données ERP",
-          "Mise en place de reporting Power BI",
-          "Formation des utilisateurs et accompagnement au changement",
+          "Préparation des plans de tests",
+          "Recette fonctionnelle et suivi des anomalies",
+          "Rédaction des guides utilisateurs",
+        ],
+      },
+      {
+        category: "Pilotage projet",
+        tasks: [
+          "Planification et suivi du projet à l’aide de diagrammes de Gantt",
+          "Gestion des délais, ressources et risques en environnement Agile",
         ],
       },
     ],
+
     projects: [
       {
-        title: "Déploiement & intégration ERP – VSActivity",
-        description: "Pilotage fonctionnel du déploiement d'un ERP, coordination entre l'éditeur et les utilisateurs, et sécurisation des données et des processus métiers.",
+        title: "Déploiement & intégration SIRH/ERP – VSActivity",
+        description:
+          "Pilotage fonctionnel du déploiement de l’ERP et coordination des parties prenantes.",
       },
       {
-        title: "Signal-Espèces – Application mobile",
-        description: "Projet dédié à la surveillance des espèces à enjeux en Île-de-France, incluant la participation à la rédaction du cahier des charges et un rôle de consulting fonctionnel.",
-      },
-      {
-        title: "Outil de planification – FREDON Île-de-France",
-        description: "Étude comparative des solutions du marché, analyse des coûts, des fonctionnalités et des contraintes, et contribution au choix de l'outil de planification le plus adapté.",
+        title: "Gestion de projets & veille technologique",
+        description:
+          "Contribution à la gestion de projets, à la veille technologique et à la transformation digitale.",
       },
     ],
+
     tools: [
-      { category: "Systèmes & solutions", items: ["ERP", "CRM", "Environnement Microsoft"] },
-      { category: "Pilotage & collaboration", items: ["Jira", "Confluence"] },
-      { category: "Méthodes & gestion de projet", items: ["Méthodes agiles", "Diagrammes de Gantt", "Planification", "Reporting"] },
-      { category: "Données & analyse", items: ["Power BI", "Analyse et préparation de données"] },
-      { category: "Documentation & qualité", items: ["Documentation projet", "Plans de tests"] },
-      { category: "Coordination & gouvernance", items: ["Coordination éditeur / métiers", "Accompagnement du changement"] },
+      {
+        category: "ERP & SIRH",
+        items: ["VSActivity", "ERP", "SIRH"],
+      },
+      {
+        category: "Analyse fonctionnelle",
+        items: [
+          "Recueil des besoins",
+          "Cahier des charges",
+          "Spécifications fonctionnelles",
+        ],
+      },
+      {
+        category: "Tests & qualité",
+        items: [
+          "Plans de tests",
+          "Recette fonctionnelle",
+          "Suivi des anomalies",
+          "Fiabilisation des données",
+        ],
+      },
+      {
+        category: "Gestion de projet",
+        items: [
+          "Diagrammes de Gantt",
+          "Planification",
+          "Gestion des risques",
+          "Méthodes agiles",
+        ],
+      },
+      {
+        category: "Accompagnement",
+        items: [
+          "Guides utilisateurs",
+          "Coordination éditeur / utilisateurs",
+        ],
+      },
     ],
+
     image: "/erp-dashboard-interface.jpg",
   },
+
+  // =========================================================
+  // TM ACADEMY
+  // =========================================================
   {
     company: "TM Academy",
     logo: "/tm-academy-logo.jpg",
     role: "Consultante Technico-Fonctionnelle",
-    department: "Transformation Digitale ",
+    department: "Transformation Digitale",
     period: "Mai 2023 – Août 2023 (4 mois)",
     location: "Algérie · Hybride",
+
     context:
       "Contribution à un projet de transformation digitale pour une école de formation souhaitant automatiser et digitaliser ses processus métiers (inscriptions, plannings, gestion des formations, suivi des apprenants/clients) via la conception et le développement d'une application web dédiée.",
+
     missions: [
       {
         category: "Analyse & cadrage fonctionnel",
@@ -179,22 +375,51 @@ const experiences = [
         ],
       },
     ],
+
     projects: [
       {
         title: "Application web de gestion de formation",
-        description: "Conception et développement d'une application web permettant de centraliser la gestion des formations, des inscriptions et des utilisateurs, tout en améliorant le suivi des apprenants et l'efficacité opérationnelle.",
+        description:
+          "Conception et développement d'une application web permettant de centraliser la gestion des formations, des inscriptions et des utilisateurs, tout en améliorant le suivi des apprenants et l'efficacité opérationnelle.",
       },
     ],
+
     tools: [
-      { category: "Analyse & conception fonctionnelle", items: ["Cahier des charges", "Spécifications fonctionnelles et techniques"] },
-      { category: "Modélisation", items: ["MERISE" , "UML (cas d'utilisation, classes, séquence)"] },
-      { category: "UX/UI & conception IHM", items: ["Figma", "Maquettes fonctionnelles"] },
-      { category: "Développement web", items: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"] },
-      { category: "Méthodes & pilotage", items: ["Méthodologie Agile", "Suivi des livrables"] },
+      {
+        category: "Analyse & conception fonctionnelle",
+        items: [
+          "Cahier des charges",
+          "Spécifications fonctionnelles et techniques",
+        ],
+      },
+      {
+        category: "Modélisation",
+        items: [
+          "MERISE",
+          "UML (cas d'utilisation, classes, séquence)",
+        ],
+      },
+      {
+        category: "UX/UI & conception IHM",
+        items: ["Figma", "Maquettes fonctionnelles"],
+      },
+      {
+        category: "Développement web",
+        items: ["PHP", "MySQL", "JavaScript", "HTML", "CSS"],
+      },
+      {
+        category: "Méthodes & pilotage",
+        items: ["Méthodologie Agile", "Suivi des livrables"],
+      },
     ],
+
     hasVideo: true,
     videoUrl: "/academievd.mp4",
   },
+
+  // =========================================================
+  // ENDLESSLY
+  // =========================================================
   {
     company: "Endlessly",
     logo: "/wellness-logo.jpg",
@@ -202,7 +427,10 @@ const experiences = [
     department: "CMS & Identité de Marque",
     period: "Août 2022 – Août 2023 (1 an)",
     location: "Liège, Belgique · À distance",
-    context: "Accompagnement d'un cabinet de bien-être dans la modernisation de sa présence digitale, à travers la conception et le déploiement d'un site web vitrine destiné à présenter les prestations, améliorer l'expérience client et renforcer la visibilité marketing. Endlessly propose des soins esthétiques et de bien-être (épilation laser, minceur, anti-âge, massages), du bien-être émotionnel (coaching, EFT), ainsi que la formation et l'équipement de professionnels avec des appareils médico-esthétiques.",
+
+    context:
+      "Accompagnement d'un cabinet de bien-être dans la modernisation de sa présence digitale, à travers la conception et le déploiement d'un site web vitrine destiné à présenter les prestations, améliorer l'expérience client et renforcer la visibilité marketing. Endlessly propose des soins esthétiques et de bien-être (épilation laser, minceur, anti-âge, massages), du bien-être émotionnel (coaching, EFT), ainsi que la formation et l'équipement de professionnels avec des appareils médico-esthétiques.",
+
     missions: [
       {
         category: "Analyse & cadrage fonctionnel",
@@ -240,37 +468,73 @@ const experiences = [
         ],
       },
     ],
+
     projects: [
       {
         title: "Création du site web du cabinet Endlessly",
-        description: "Conception et déploiement d'un site vitrine WordPress visant à présenter les prestations, automatiser certains échanges (formulaires, newsletters) et renforcer la visibilité digitale et l'expérience client.",
+        description:
+          "Conception et déploiement d'un site vitrine WordPress visant à présenter les prestations, automatiser certains échanges (formulaires, newsletters) et renforcer la visibilité digitale et l'expérience client.",
       },
     ],
+
     tools: [
-      { category: "CMS & Web", items: ["WordPress"] },
-      { category: "UX/UI & conception", items: ["Figma"] },
-      { category: "Fonctionnel & pilotage", items: ["Cahier des charges", "Ateliers fonctionnels", "Parcours utilisateurs"] },
-      { category: "Déploiement & exploitation", items: ["Cloud", "Sauvegardes", "Sécurité"] },
-      { category: "Marketing & visibilité", items: ["SEO", "Automatisation des formulaires et newsletters"] },
+      {
+        category: "CMS & Web",
+        items: ["WordPress"],
+      },
+      {
+        category: "UX/UI & conception",
+        items: ["Figma"],
+      },
+      {
+        category: "Fonctionnel & pilotage",
+        items: [
+          "Cahier des charges",
+          "Ateliers fonctionnels",
+          "Parcours utilisateurs",
+        ],
+      },
+      {
+        category: "Déploiement & exploitation",
+        items: ["Cloud", "Sauvegardes", "Sécurité"],
+      },
+      {
+        category: "Marketing & visibilité",
+        items: [
+          "SEO",
+          "Automatisation des formulaires et newsletters",
+        ],
+      },
     ],
+
     hasVideo: true,
     videoUrl: "/wordpress-website-fitness.mp4",
   },
 ]
-// </CHANGE>
 
 export function ExperienceSection() {
   return (
     <section id="experience" className="py-20 px-4 bg-muted/30">
       <div className="container max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-balance">Expériences professionnelles</h2>
+
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-balance">
+          Expériences professionnelles
+        </h2>
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="overflow-hidden border-2 hover:border-primary/30 transition-all group">
+            <Card
+              key={index}
+              className="overflow-hidden border-2 hover:border-primary/30 transition-all group"
+            >
               <div className="grid md:grid-cols-5 gap-6">
-                {/* Left: Company info */}
+
+                {/* ===================== COLONNE GAUCHE ===================== */}
+
                 <div className="md:col-span-2 p-6 md:p-8 bg-gradient-to-br from-primary/5 to-chart-2/5 flex flex-col gap-4">
+
                   <div className="flex items-start gap-4">
+
                     <div className="w-14 h-14 rounded-xl bg-background shadow-md flex items-center justify-center flex-shrink-0 border-2 border-primary/20">
                       <Image
                         src={exp.logo || "/placeholder.svg"}
@@ -280,11 +544,20 @@ export function ExperienceSection() {
                         className="rounded-lg"
                       />
                     </div>
+
                     <div className="flex-1 min-w-0">
+
                       <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors mb-1 flex items-center gap-2">
-                        <span className="truncate">{exp.company}</span>
+
+                        <span className="truncate">
+                          {exp.company}
+                        </span>
+
+                        {/* INFO FREDON */}
+
                         {exp.company === "FREDON Île-de-France" && (
                           <Popover>
+
                             <PopoverTrigger asChild>
                               <button
                                 type="button"
@@ -294,18 +567,30 @@ export function ExperienceSection() {
                                 <Info className="w-3.5 h-3.5" />
                               </button>
                             </PopoverTrigger>
-                            <PopoverContent align="start" className="w-96 text-sm">
+
+                            <PopoverContent
+                              align="start"
+                              className="w-96 text-sm"
+                            >
                               <p className="leading-relaxed">
-                                FREDON Île-de-France est un organisme public à vocation sanitaire spécialisé dans la santé
-                                des végétaux. Il surveille l’état des plantes, détecte les maladies et nuisibles, et
-                                accompagne les collectivités et les professionnels des espaces verts dans la gestion
-                                écologique et durable de leurs espaces.
+                                FREDON Île-de-France est un organisme public à
+                                vocation sanitaire spécialisé dans la santé des
+                                végétaux. Il surveille l’état des plantes,
+                                détecte les maladies et nuisibles, et accompagne
+                                les collectivités et les professionnels des
+                                espaces verts dans la gestion écologique et
+                                durable de leurs espaces.
                               </p>
                             </PopoverContent>
+
                           </Popover>
                         )}
+
+                        {/* INFO BOUYGUES */}
+
                         {exp.company === "Bouygues Telecom" && (
                           <Popover>
+
                             <PopoverTrigger asChild>
                               <button
                                 type="button"
@@ -315,22 +600,41 @@ export function ExperienceSection() {
                                 <Info className="w-3.5 h-3.5" />
                               </button>
                             </PopoverTrigger>
-                            <PopoverContent align="start" className="w-96 text-sm">
+
+                            <PopoverContent
+                              align="start"
+                              className="w-96 text-sm"
+                            >
                               <p className="leading-relaxed">
-                                Bouygues Telecom est un opérateur de télécommunications français qui fournit des services
-                                de téléphonie mobile, internet et réseaux aux particuliers et aux entreprises.
+                                Bouygues Telecom est un opérateur de
+                                télécommunications français qui fournit des
+                                services de téléphonie mobile, internet et
+                                réseaux aux particuliers et aux entreprises.
                               </p>
                             </PopoverContent>
+
                           </Popover>
                         )}
+
                       </h3>
+
                       {exp.department && (
-                        <p className="text-sm text-muted-foreground mb-2">{exp.department}</p>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          {exp.department}
+                        </p>
                       )}
+
+                      {/* PROVISIONING BOUYGUES */}
+
                       {exp.company === "Bouygues Telecom" && (
                         <p className="text-sm text-muted-foreground mb-2 flex items-center gap-2">
-                          <span>SI provisioning mobile</span>
+
+                          <span>
+                            SI provisioning mobile
+                          </span>
+
                           <Popover>
+
                             <PopoverTrigger asChild>
                               <button
                                 type="button"
@@ -340,31 +644,61 @@ export function ExperienceSection() {
                                 <Info className="w-3.5 h-3.5" />
                               </button>
                             </PopoverTrigger>
-                            <PopoverContent align="start" className="w-80 text-sm">
+
+                            <PopoverContent
+                              align="start"
+                              className="w-80 text-sm"
+                            >
                               <p>
-                                Le SI de provisioning mobile gère l’activation et l’évolution des services mobiles des
-                                clients (ligne, carte SIM, accès internet, options, services réseau).
+                                Le SI de provisioning mobile gère l’activation
+                                et l’évolution des services mobiles des clients
+                                (ligne, carte SIM, accès internet, options,
+                                services réseau).
                               </p>
                             </PopoverContent>
+
                           </Popover>
+
                         </p>
                       )}
-                      <p className="text-base font-semibold text-primary mb-2">{exp.role}</p>
+
+                      <p className="text-base font-semibold text-primary mb-2">
+                        {exp.role}
+                      </p>
+
                       <div className="space-y-1">
-                        <p className="text-xs text-muted-foreground">{exp.period}</p>
-                        <p className="text-xs text-muted-foreground">{exp.location}</p>
+
+                        <p className="text-xs text-muted-foreground">
+                          {exp.period}
+                        </p>
+
+                        <p className="text-xs text-muted-foreground">
+                          {exp.location}
+                        </p>
+
                       </div>
+
                     </div>
                   </div>
 
+                  {/* CONTEXTE */}
+
                   {exp.context && (
                     <div className="pt-4 border-t border-primary/20">
-                      <p className="text-sm text-muted-foreground leading-relaxed">{exp.context}</p>
+
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {exp.context}
+                      </p>
+
                     </div>
                   )}
 
+                  {/* IMAGE / VIDEO */}
+
                   {exp.hasVideo && exp.videoUrl ? (
+
                     <div className="mt-4 rounded-lg overflow-hidden border-2 border-primary/20 shadow-lg">
+
                       <video
                         src={exp.videoUrl}
                         controls
@@ -384,10 +718,15 @@ export function ExperienceSection() {
                         })()}
                         className="w-full h-auto"
                       />
+
                     </div>
+
                   ) : (
+
                     exp.image && (
+
                       <div className="mt-4 rounded-lg overflow-hidden border-2 border-primary/20 shadow-lg">
+
                         <Image
                           src={exp.image || "/placeholder.svg"}
                           alt={`${exp.company} project`}
@@ -395,108 +734,227 @@ export function ExperienceSection() {
                           height={300}
                           className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
                         />
+
                       </div>
+
                     )
                   )}
+
                 </div>
 
-                {/* Right: Missions and projects */}
-                <div className="md:col-span-3 p-6 md:p-8 space-y-6">
-                  {/* Video moved to left column in place of the photo */}
+                {/* ===================== COLONNE DROITE ===================== */}
 
-                  {/* Missions */}
+                <div className="md:col-span-3 p-6 md:p-8 space-y-6">
+
+                  {/* MISSIONS */}
+
                   <div className="space-y-4">
+
                     <h4 className="font-semibold text-foreground flex items-center gap-2">
                       <span className="w-1 h-6 bg-primary rounded-full" />
                       Missions principales
                     </h4>
+
                     {exp.missions.map((mission, missionIndex) => (
-                      <div key={missionIndex} className="space-y-2">
-                        <p className="text-sm font-medium text-primary">{mission.category}</p>
+
+                      <div
+                        key={missionIndex}
+                        className="space-y-2"
+                      >
+
+                        <p className="text-sm font-medium text-primary">
+                          {mission.category}
+                        </p>
+
                         <ul className="space-y-1.5 pl-4">
+
                           {mission.tasks.map((task, taskIndex) => (
-                            <li key={taskIndex} className="text-sm text-muted-foreground flex items-start">
+
+                            <li
+                              key={taskIndex}
+                              className="text-sm text-muted-foreground flex items-start"
+                            >
+
                               <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary/60 mt-1.5 mr-3 flex-shrink-0" />
-                              <span>{task}</span>
+
+                              <span>
+                                {task}
+                              </span>
+
                             </li>
+
                           ))}
+
                         </ul>
+
                       </div>
+
                     ))}
+
                   </div>
 
+                  {/* PROJETS CLÉS */}
 
-                  {/* Projects */}
                   {exp.projects && exp.projects.length > 0 && (
+
                     <div className="pt-4 border-t border-border space-y-3">
+
                       <h4 className="font-semibold text-foreground flex items-center gap-2">
+
                         <span className="w-1 h-6 bg-chart-2 rounded-full" />
+
                         Projets clés
+
                       </h4>
+
                       <div className="space-y-3">
+
                         {exp.projects.map((project, projectIndex) => (
+
                           <div key={projectIndex}>
+
                             {typeof project === "string" ? (
-                              <Badge variant="secondary" className="text-xs py-1.5 px-3">
+
+                              <Badge
+                                variant="secondary"
+                                className="text-xs py-1.5 px-3"
+                              >
                                 {project}
                               </Badge>
+
                             ) : (
+
                               <div className="space-y-1">
-                                <p className="text-sm font-semibold text-chart-2">{project.title}</p>
-                                <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+
+                                <p className="text-sm font-semibold text-chart-2">
+                                  {project.title}
+                                </p>
+
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                  {project.description}
+                                </p>
+
                               </div>
+
                             )}
+
                           </div>
+
                         ))}
+
                       </div>
+
                     </div>
+
                   )}
-                  {/* Environnement & outils (Bouygues Telecom & FREDON & Endlessly & TM Academy) */}
-                  {(exp.company === "Bouygues Telecom" || exp.company === "FREDON Île-de-France" || exp.company === "Endlessly" || exp.company === "TM Academy") && exp.tools && (
-                    <div className="pt-4 border-t border-border space-y-3">
-                      <h4 className="font-semibold text-foreground flex items-center gap-2">
-                        <span className="w-1 h-6 bg-chart-2 rounded-full" />
-                        Environnement & outils
-                      </h4>
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="tools">
-                          <Tooltip>
-                            <TooltipTrigger asChild>
-                              <AccordionTrigger className="text-sm">
-                                <div className="flex flex-wrap items-center gap-2">
-                                  {exp.tools.slice(0, 4).map((group, i) => (
-                                    <Badge key={i} variant="secondary" className="text-xs py-1 px-2">
-                                      {group.items[0]}
-                                    </Badge>
-                                  ))}
-                                  <span className="text-xs text-muted-foreground hidden sm:inline">Voir les outils</span>
-                                </div>
-                              </AccordionTrigger>
-                            </TooltipTrigger>
-                            <TooltipContent sideOffset={6}>Cliquer pour ouvrir</TooltipContent>
-                          </Tooltip>
-                          <AccordionContent>
-                            <div className="grid md:grid-cols-2 gap-4">
-                              {exp.tools.map((group, i) => (
-                                <div key={i} className="space-y-1">
-                                  <p className="text-xs font-medium text-foreground/80">{group.category}</p>
-                                  <p className="text-xs text-muted-foreground">
-                                    {group.items.join(" · ")}
-                                  </p>
-                                </div>
-                              ))}
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </div>
-                  )}
+
+                  {/* ENVIRONNEMENT & OUTILS */}
+
+                  {(exp.company === "Groupe La Poste" ||
+                    exp.company === "Bouygues Telecom" ||
+                    exp.company === "FREDON Île-de-France" ||
+                    exp.company === "Endlessly" ||
+                    exp.company === "TM Academy") &&
+                    exp.tools && (
+
+                      <div className="pt-4 border-t border-border space-y-3">
+
+                        <h4 className="font-semibold text-foreground flex items-center gap-2">
+
+                          <span className="w-1 h-6 bg-chart-2 rounded-full" />
+
+                          Environnement & outils
+
+                        </h4>
+
+                        <Accordion
+                          type="single"
+                          collapsible
+                        >
+
+                          <AccordionItem value="tools">
+
+                            <Tooltip>
+
+                              <TooltipTrigger asChild>
+
+                                <AccordionTrigger className="text-sm">
+
+                                  <div className="flex flex-wrap items-center gap-2">
+
+                                    {exp.tools
+                                      .slice(0, 4)
+                                      .map((group, i) => (
+
+                                        <Badge
+                                          key={i}
+                                          variant="secondary"
+                                          className="text-xs py-1 px-2"
+                                        >
+                                          {group.items[0]}
+                                        </Badge>
+
+                                      ))}
+
+                                    <span className="text-xs text-muted-foreground hidden sm:inline">
+                                      Voir les outils
+                                    </span>
+
+                                  </div>
+
+                                </AccordionTrigger>
+
+                              </TooltipTrigger>
+
+                              <TooltipContent sideOffset={6}>
+                                Cliquer pour ouvrir
+                              </TooltipContent>
+
+                            </Tooltip>
+
+                            <AccordionContent>
+
+                              <div className="grid md:grid-cols-2 gap-4">
+
+                                {exp.tools.map((group, i) => (
+
+                                  <div
+                                    key={i}
+                                    className="space-y-1"
+                                  >
+
+                                    <p className="text-xs font-medium text-foreground/80">
+                                      {group.category}
+                                    </p>
+
+                                    <p className="text-xs text-muted-foreground">
+                                      {group.items.join(" · ")}
+                                    </p>
+
+                                  </div>
+
+                                ))}
+
+                              </div>
+
+                            </AccordionContent>
+
+                          </AccordionItem>
+
+                        </Accordion>
+
+                      </div>
+
+                    )}
+
                 </div>
+
               </div>
+
             </Card>
           ))}
         </div>
-        {/* </CHANGE> */}
+
       </div>
     </section>
   )
