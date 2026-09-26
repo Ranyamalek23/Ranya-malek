@@ -116,7 +116,7 @@ const experiences = [
     logo: "/bouygues-telecom-logo.jpg",
     role: "Ingénieure Fonctionnelle SI – MOE",
     department: "Pôle Pilotage & Conception – DSI",
-    period: "Mars 2025 – Sept. 2025 (7 mois)",
+    period: "Mars 2025 – juillet 2026",
     location: "Meudon, Île-de-France · Sur site",
 
     context:
@@ -227,7 +227,7 @@ const experiences = [
     company: "FREDON Île-de-France",
     logo: "/fredon-logo.jpg",
     role: "Cheffe de projet SIRH – Déploiement & Intégration ERP",
-    period: "Avr. 2024 – Août 2024 (5 mois)",
+    period: "Avr. 2024 – Août 2024 ",
     location: "Champlan, Île-de-France · Sur site",
 
     context:
@@ -330,7 +330,7 @@ const experiences = [
     logo: "/tm-academy-logo.jpg",
     role: "Consultante Technico-Fonctionnelle",
     department: "Transformation Digitale",
-    period: "Mai 2023 – Août 2023 (4 mois)",
+    period: "Mai 2023 – Août 2023 ",
     location: "Algérie · Hybride",
 
     context:
@@ -425,7 +425,7 @@ const experiences = [
     logo: "/wellness-logo.jpg",
     role: "Consultante en Transformation Digitale",
     department: "CMS & Identité de Marque",
-    period: "Août 2022 – Août 2023 (1 an)",
+    period: "Août 2022 – Août 2023 ",
     location: "Liège, Belgique · À distance",
 
     context:
