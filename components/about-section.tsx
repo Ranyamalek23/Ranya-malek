@@ -12,61 +12,80 @@ export function AboutSection() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-chart-2/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
           <div className="relative space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
             
-              Diplômée d’un{" "}
+            <p>
               <span className="font-semibold text-foreground">
-                Master MIAGE – parcours Ingénierie Logicielle
-              </span>
-              , je souhaite intégrer une entreprise innovante en{" "}
-              <span className="font-semibold text-foreground">CDI</span> afin de
-              contribuer activement à la{" "}
-              <span className="font-semibold text-foreground">
-                transformation digitale
+                Double diplômée
               </span>{" "}
-              et à la réussite de ses projets informatiques.
+              d’un{" "}
+              <span className="font-semibold text-foreground">
+                Master MIAGE – Ingénierie Logicielle pour le Web
+              </span>{" "}
+              et d’un{" "}
+              <span className="font-semibold text-foreground">
+                Master 2 complémentaire en Conduite de Projets Informatiques
+              </span>
+              , j’occupe actuellement un poste de{" "}
+              <span className="font-semibold text-foreground">
+                Chargée de projet SIRH – Data, Reporting & Pilotage de la performance
+              </span>{" "}
+              au sein du{" "}
+              <span className="font-semibold text-foreground">
+                Groupe La Poste
+              </span>
+              , dans le cadre d’un{" "}
+              <span className="font-semibold text-foreground">
+                CDD
+              </span>
+              .
             </p>
 
             <p>
               Mon parcours m’a permis de développer une{" "}
               <span className="font-semibold text-foreground">
-                double compétence métier et technique
+                double compétence fonctionnelle et technique
               </span>
-              , à travers des missions d’
+              , à travers l’
               <span className="font-semibold text-foreground">
                 analyse des besoins métiers
               </span>
-              , de{" "}
+              , le{" "}
               <span className="font-semibold text-foreground">
-                pilotage de projets SI
-              </span>{" "}
-              et de{" "}
-              <span className="font-semibold text-foreground">
-                participation aux phases de conception
+                pilotage de projets SI/SIRH
               </span>
-              , tout en développant une{" "}
+              , la{" "}
               <span className="font-semibold text-foreground">
-                solide compréhension technique
+                conception fonctionnelle
               </span>{" "}
-              des systèmes d’information, des bases de données et des
-              architectures applicatives.
+              ainsi que le{" "}
+              <span className="font-semibold text-foreground">
+                reporting et l’analyse de données
+              </span>
+              , tout en consolidant ma compréhension des systèmes
+              d’information, des bases de données et des architectures
+              applicatives.
             </p>
 
             <p>
               Curieuse, rigoureuse et dotée d’un{" "}
               <span className="font-semibold text-foreground">
-                bon sens de l’analyse
+                bon esprit d’analyse
               </span>
-              , je m’épanouis dans des environnements où la{" "}
+              , je souhaite poursuivre mon parcours en{" "}
               <span className="font-semibold text-foreground">
-                collaboration
+                CDI
               </span>{" "}
-              et l’
+              et contribuer à des projets de{" "}
               <span className="font-semibold text-foreground">
-                innovation
-              </span>{" "}
-              sont au cœur des enjeux numériques.
+                transformation digitale
+              </span>
+              , à l’interface entre les{" "}
+              <span className="font-semibold text-foreground">
+                métiers, la data et les équipes IT
+              </span>
+              .
             </p>
+
           </div>
         </Card>
       </div>
